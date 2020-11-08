@@ -11,7 +11,7 @@ class MelodyModel(models.Model):
     whic every other model will inherit. It provides
         + created (DateTime): Store the datetime the object was created.
         + modified (DateTime): Store the last datetime the object was modified.
-    """ 
+    """
 
     created = models.DateTimeField(
         'created at',
@@ -32,4 +32,4 @@ class MelodyModel(models.Model):
 
         # Latest by ascending 'created' date
         get_latest_by = 'created'
-        ordering = ['-modified', '-created']    
+        ordering = ['-modified', '-created']
